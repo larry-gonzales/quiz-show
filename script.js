@@ -150,7 +150,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'Who does Tom Cruise play in Top Gun?',
+        question: 'Which character does Tom Cruise play in Top Gun?',
         answer: [
         {text: 'Maverick', correct: true},
         {text: 'Cougar', correct: false},
@@ -159,7 +159,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'Which musical based on Romeo & Juliet was a 60s Oscar winner?',
+        question: 'Which musical based on Romeo and Juliet was a 60s Oscar winner?',
         answer: [
         {text: 'Follow That Girl', correct: false},
         {text: 'Ernest in Love', correct: false},
@@ -253,7 +253,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'What country has competed the most times in the summer Olympics without winning a gold medal?',
+        question: 'Which country has competed the most times in the summer Olympics without winning a gold medal?',
         answer: [
         {text: 'The Philippines', correct: true},
         {text: 'Guam', correct: false},
@@ -280,7 +280,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'What year did the players go on strike, resulting to no baseball World Series?',
+        question: 'What year did the players go on strike, resulting in no baseball World Series?',
         answer: [
         {text: '1987', correct: false},
         {text: '1998', correct: false},
@@ -432,7 +432,7 @@ const musicQuestions = [
         ]
     },
     {
-        question: 'At the end of what month do Green Day want you to wake them up?',
+        question: 'At the end of what month does Green Day want you to wake them up?',
         answer: [
         {text: 'September', correct: true},
         {text: 'August', correct: false},
@@ -459,7 +459,7 @@ const musicQuestions = [
         ]
     },
     {
-        question: 'Which was not a member of the traveling Wilburys?',
+        question: 'Who was not a member of the traveling Wilburys?',
         answer: [
         {text: 'Bob Dylan', correct: false},
         {text: 'Roy Orbison', correct: false},
