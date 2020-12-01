@@ -1,2 +1,2 @@
 # quiz-show
-A multiple-choice quiz app built with javascript, html and css.
+A multiple-choice desktop quiz app built with javascript, html and css.
