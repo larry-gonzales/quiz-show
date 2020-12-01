@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Show</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Intro screen -->
+    <div id="start-container" class="container">
+        <div class="quiz-wrapper">
+            <img src="img/quiz-show-marquee.svg" alt="Quiz show logo." class="quiz-image">
+            <h1 class="start-text">Select a category to begin!</h1>
+            <!-- Categories btns -->
+            <div class="category-btns">
+                <button id="movies" class="movies-btn">Movies</button>
+                <button id="sports" class="sports-btn">Sports</button>
+                <button id="cartoons" class="cartoons-btn">Cartoons</button>
+                <button id="music" class="music-btn">Music</button>
+            </div>
+        </div>
+    </div> <!-- END container -->
+
+    <div id="questions-container" class="container hide">
+        <div class="questions-wrapper">
+            <h2 id="question-count" class="question-count-text">Question x of y</h2>
+            <div class="question-frame">
+                <div id="question" class="question-text">Question
+                </div>
+            </div>
+            <!-- Categories btns -->
+            <div id="answer-btn" class="answer-grid">
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+            </div>
+
+            <button id="next" class="next-btn hide">Next</button>
+
+            <button id="restart" class="restart-btn hide">Restart</button>
+        </div>
+    </div> <!-- END container -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
