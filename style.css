@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(54, 104, 141);
+}
+
+/* =============================
+   Quiz Containers
+============================= */
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.quiz-wrapper {
+    height: 44rem;
+    width: 44rem;
+    min-width: 44rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions-wrapper {
+    height: 44rem;
+    width: 44rem;
+    min-width: 44rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px #111;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5rem;
+    align-items: center;
+}
+
+
+/* =============================
+   Quiz Starting Categories
+   ============================= */
+.quiz-image {
+    width: 26rem;
+}
+
+.start-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 2rem 0 2.25rem 0;
+    width: 24rem;
+}
+
+.category-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.movies-btn,
+.sports-btn,
+.cartoons-btn,
+.music-btn {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-radius: 0.35rem;
+    border-style: none;
+    padding: 0.5rem 0;
+    width: 12.5rem;
+    background: rgb(243, 205, 5);
+}
+
+.movies-btn:hover,
+.sports-btn:hover,
+.cartoons-btn:hover,
+.music-btn:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* =============================
+   Quiz Questions
+   ============================= */
+.question-count-text {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.question-frame {
+    height: 15rem;
+    width: 25.75rem;
+    background: rgb(243, 205, 5);
+    border-style: none;
+    border-radius: 0.35rem;
+    margin: 2rem 0;
+    padding: 1.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.btn {
+    font-size: 1rem;
+    text-transform: none;
+    border-style: none;
+    border-radius: 0.35rem;
+    padding: 0.5rem 0;
+    width: 12.5rem;
+    color: #333;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.btn:hover {
+    border-style: none;
+    background: rgb(243, 205, 5);
+    cursor: pointer;
+}
+
+.btn.correct {
+    border-style: none;
+    background: yellowgreen;
+    color: #000;
+}
+
+.btn.wrong {
+    border-style: none;
+    background: firebrick;
+    color: #fff;
+}
+
+.question-text {
+    font-size: 1.55rem;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+
+.answer-text {
+    font-size: 1.125rem;
+}
+
+.next-btn, .restart-btn {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 0.35rem;
+    padding: 0.25rem 0;
+    width: 6rem;
+    margin-top: 1.5rem;
+    color: #000;
+    background: #fff;
+}
+
+.next-btn:hover,
+.restart-btn:hover {
+    background: rgb(243, 205, 5);
+    color: #000;
+    border-style: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
