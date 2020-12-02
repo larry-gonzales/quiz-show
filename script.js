@@ -177,7 +177,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'Who is the only Disney princess who was inspired by an ' + '\n' + 'actual person?',
+        question: 'Who is the only Disney princess who was inspired by an actual person?',
         answer: [
         {text: 'Jasmine', correct: false},
         {text: 'Moana', correct: false},
