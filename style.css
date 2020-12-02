@@ -9,25 +9,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
     background-color: rgb(54, 104, 141);
+    height: 100vh;
 }
-
-/* =============================
-   Quiz Containers
-============================= */
 
 .container {
     display: flex;
     align-content: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+/* =============================
+   Quiz Starting Categories
+   ============================= */
 .quiz-wrapper {
-    height: 44rem;
-    width: 44rem;
-    min-width: 44rem;
+    height: 42rem;
+    width: 42rem;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 20px #111;
@@ -37,23 +34,6 @@ body {
     align-items: center;
 }
 
-.questions-wrapper {
-    height: 44rem;
-    width: 44rem;
-    min-width: 44rem;
-    border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 20px #111;
-    display: flex;
-    flex-direction: column;
-    padding-top: 6.5rem;
-    align-items: center;
-}
-
-
-/* =============================
-   Quiz Starting Categories
-   ============================= */
 .quiz-image {
     width: 26rem;
 }
@@ -98,6 +78,18 @@ body {
 /* =============================
    Quiz Questions
    ============================= */
+.questions-wrapper {
+    height: 42rem;
+    width: 42rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px #111;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5rem;
+    align-items: center;
+}
+
 .question-count-text {
     font-size: 1.5rem;
     color: #fff;
@@ -115,10 +107,23 @@ body {
     align-items: center;
 }
 
+.question-text {
+    font-size: 1.55rem;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Answer buttons */
 .answer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
+}
+
+/* Answera text */
+.answer-text {
+    font-size: 1.125rem;
 }
 
 .btn {
@@ -141,6 +146,7 @@ body {
     cursor: pointer;
 }
 
+/* Right and wrong answer button colors */
 .btn.correct {
     border-style: none;
     background: yellowgreen;
@@ -153,17 +159,7 @@ body {
     color: #fff;
 }
 
-.question-text {
-    font-size: 1.55rem;
-    color: #333;
-    text-align: center;
-    padding: 1rem;
-}
-
-.answer-text {
-    font-size: 1.125rem;
-}
-
+/* Next button */
 .next-btn, .restart-btn {
     font-size: 1rem;
     text-align: center;
@@ -187,4 +183,117 @@ body {
 
 .hide {
     display: none;
+}
+
+/* =================================================
+   Media queries for mobile devices (640px and down)
+   ================================================= */
+@media only screen and (max-width: 640px) {
+    body {
+        background: #7396af;
+    }
+
+    .quiz-wrapper, .questions-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 20rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Quiz starting categories */
+    .quiz-wrapper {
+        background: none;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .quiz-image {
+        width: 18rem;
+    }
+    
+    .start-text {
+        font-size: 1.15rem;
+        line-height: 1.65rem;
+        margin: 1.125rem 0 1.25rem 0;
+        width: 11rem;
+    }
+
+    .category-btns {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .movies-btn,
+    .sports-btn,
+    .cartoons-btn,
+    .music-btn {
+        font-size: 1.125rem;
+        padding: 0.25rem 0;
+        width: 13rem;
+    }
+    
+    /* Quiz questions */
+    .questions-wrapper {
+        background: none;
+        box-shadow: none;
+        height: 28.5rem;
+    }
+
+    .question-count-text {
+        font-size: 1.125rem;
+    }
+
+    .question-frame {
+        height: 10rem;
+        width: 18rem;
+        border-style: none;
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .question-text {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        width: 29rem;
+        padding: 0.5rem;
+    }
+    
+    /* Answer buttons */
+    .answer-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    /* Answera text */
+    .answer-btn {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 1rem;
+        text-transform: none;
+        border-style: none;
+        padding: 0.25rem 0;
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Next button */
+    .next-btn, .restart-btn {
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 0.35rem;
+        padding: 0.25rem 0;
+        width: 6rem;
+        margin-top: 1.75rem;
+        color: #000;
+        background: #fff;
+    }
 }

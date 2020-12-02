@@ -141,7 +141,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'In the movie Elf, what flavor of Pop Tarts does Buddy use in his spaghetti?',
+        question: 'In the movie Elf, ' + '\n' + 'what flavor of Pop Tarts does Buddy use in ' + '\n' + 'his spaghetti?',
         answer: [
         {text: 'Strawberry', correct: false},
         {text: 'Chocolate', correct: true},
@@ -150,7 +150,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'Which character does Tom Cruise play in Top Gun?',
+        question: 'Which character does Tom Cruise play in ' + '\n' + 'Top Gun?',
         answer: [
         {text: 'Maverick', correct: true},
         {text: 'Cougar', correct: false},
@@ -177,7 +177,7 @@ const movieQuestions = [
         ]
     },
     {
-        question: 'Who is the only Disney princess who was inspired by an actual person?',
+        question: 'Who is the only Disney princess who was inspired by an ' + '\n' + 'actual person?',
         answer: [
         {text: 'Jasmine', correct: false},
         {text: 'Moana', correct: false},
@@ -217,7 +217,7 @@ const movieQuestions = [
 // Sports category questions
 const sportsQuestions = [
     { 
-        question: 'What’s the diameter of a basketball hoop in inches?',
+        question: 'What’s the diameter ' + '\n' + 'of a basketball hoop ' + '\n' + 'in inches?',
         answer: [
         {text: '12 inches', correct: false},
         {text: '18 inches', correct: true},
@@ -226,7 +226,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'What do you call it when a player makes three back-to-back strikes in bowling?',
+        question: 'What do you call it when a player makes three back-to-back strikes ' + '\n' + 'in bowling?',
         answer: [
         {text: 'Turkey', correct: true},
         {text: 'Triple', correct: false},
@@ -235,7 +235,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'A sporting event is held every year on Memorial Day. What is it?',
+        question: 'A sporting event is ' + '\n' + 'held every year on ' + '\n' + 'Memorial Day.' + '\n' + 'What is it?',
         answer: [
         {text: 'The World Cup', correct: false},
         {text: 'Wimbledon', correct: false},
@@ -253,7 +253,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'Which country has competed the most times in the summer Olympics without winning a gold medal?',
+        question: 'Which country has competed the most times in the summer Olympics without winning a ' + '\n' + 'gold medal?',
         answer: [
         {text: 'The Philippines', correct: true},
         {text: 'Guam', correct: false},
@@ -262,7 +262,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'How many dimples are there on an average golf ball?',
+        question: 'How many dimples ' + '\n' + ' are there on an ' + '\n' + 'average golf ball?',
         answer: [
         {text: '100', correct: false},
         {text: '256', correct: false},
@@ -271,7 +271,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'What is the only team in the NFL to neither host nor play in the Super Bowl?',
+        question: 'What is the only team ' + '\n' + 'in the NFL to neither ' + '\n' + 'host nor play in ' + '\n' + 'the Super Bowl?',
         answer: [
         {text: 'Buffalo Bills', correct: false},
         {text: 'Cleveland Browns', correct: true},
@@ -289,7 +289,7 @@ const sportsQuestions = [
         ]
     },
     {
-        question: 'What number is next (right) to the number "20" on a standard British dart board?',
+        question: 'What number is next (right) to the number "20" on a standard British ' + '\n' + 'dart board?',
         answer: [
         {text: '9', correct: false},
         {text: '4', correct: false},
@@ -311,7 +311,7 @@ const sportsQuestions = [
 // Cartoons category questions
 const cartoonsQuestions = [
     { 
-        question: 'In Rick and Morty, from which dimension do Rick and Morty originate from?',
+        question: 'In Rick and Morty, ' + '\n' + 'from which dimension ' + '\n' + 'do Rick and Morty ' + '\n' + 'originate from?',
         answer: [
         {text: 'Doopidoo Dimension', correct: false},
         {text: 'Dimension C-137', correct: true},
@@ -329,7 +329,7 @@ const cartoonsQuestions = [
         ]
     },
     {
-        question: 'Who plays the voice of Sideshow Bob in The Simpsons?',
+        question: 'Who plays the voice ' + '\n' + 'of Sideshow Bob in ' + '\n' + 'The Simpsons?',
         answer: [
         {text: 'Dan Castellaneta', correct: false},
         {text: 'Seth MacFarlane', correct: false},
@@ -338,7 +338,7 @@ const cartoonsQuestions = [
         ]
     },
     {
-        question: 'What does Ren often call Stimpy?',
+        question: 'What does Ren ' + '\n' + 'often call Stimpy?',
         answer: [
         {text: 'A dummy', correct: false},
         {text: 'A halfwit', correct: false},
@@ -347,7 +347,7 @@ const cartoonsQuestions = [
         ]
     },
     {
-        question: 'On the show Futurmama, what company does Dr. Farnsworth run?',
+        question: 'On the show Futurmama, what company does ' + '\n' + 'Dr. Farnsworth run?',
         answer: [
         {text: 'Space Express', correct: false},
         {text: 'Earth Express', correct: false},
@@ -356,7 +356,7 @@ const cartoonsQuestions = [
         ]
     },
     {
-        question: 'How many years after the debut of Mickey Mouse was it before Minnie Mouse made her first appearance?',
+        question: 'How many years after the debut of Mickey Mouse was it before Minnie Mouse made her ' + '\n' + 'first appearance?',
         answer: [
         {text: '1 year', correct: false},
         {text: 'Same year', correct: true},
@@ -392,7 +392,7 @@ const cartoonsQuestions = [
         ]
     },
     {
-        question: 'This Peanuts character first appeared in 1966 but was not named until four years later.',
+        question: 'This Peanuts character first appeared in 1966, ' + '\n' + 'but was not named until ' + '\n' + 'four years later.',
         answer: [
         {text: 'Marcie', correct: false},
         {text: 'Pigpen', correct: false},
@@ -414,7 +414,7 @@ const musicQuestions = [
         ]
     },
     {
-        question: 'What was Nirvana‘s first album called?',
+        question: 'What was Nirvana‘s ' + '\n' + 'first album called?',
         answer: [
         {text: 'Insecticide', correct: false},
         {text: 'Bleach', correct: true},
