@@ -5,6 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -75,6 +79,14 @@ body {
     cursor: pointer;
 }
 
+.movies-btn:focus,
+.sports-btn:focus,
+.cartoons-btn:focus,
+.music-btn:focus {
+    background: #fff;
+    color: #000;
+}
+
 /* =============================
    Quiz Questions
    ============================= */
@@ -102,17 +114,17 @@ body {
     border-style: none;
     border-radius: 0.35rem;
     margin: 2rem 0;
-    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .question-text {
-    font-size: 1.55rem;
+    outline: 1px solid red;
+    font-size: 1.5rem;
     color: #333;
     text-align: center;
-    padding: 0.85rem;
+    padding: 1rem;
 }
 
 /* Answer buttons */
@@ -145,6 +157,10 @@ body {
     border-style: none;
     background: rgb(243, 205, 5);
     cursor: pointer;
+}
+
+.btn:focus {
+    background: rgb(243, 205, 5);
 }
 
 /* Right and wrong answer button colors */
@@ -249,7 +265,7 @@ body {
     }
 
     .question-frame {
-        height: 10rem;
+        height: 9rem;
         width: 18rem;
         border-style: none;
         padding: 1.5rem 0.75rem;
@@ -269,10 +285,6 @@ body {
     }
     
     /* Answera text */
-    .answer-btn {
-        font-size: 1rem;
-    }
-    
     .btn {
         font-size: 1rem;
         text-transform: none;
